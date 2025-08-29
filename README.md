@@ -11,7 +11,7 @@ A collection of CSS snippets for use in Obsidian.
 - [External Link Icon](#external-link-icon)
 - [Icon Switch](#icon-switch)
 - [Rainbow Folders](#rainbow-folders)
-- [Vault Help Button](#)
+- [Vault Help Button](#vault-help-button)
 ---
 
 ### Calendar Tweaks
