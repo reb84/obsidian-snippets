@@ -11,6 +11,7 @@ A collection of CSS snippets for use in Obsidian.
 - [External Link Icon](#external-link-icon)
 - [Icon Switch](#icon-switch)
 - [Rainbow Folders](#rainbow-folders)
+- [Vault Help Button](#)
 ---
 
 ### Calendar Tweaks
@@ -57,6 +58,8 @@ My own take on rainbow folders with 'simple' and 'full' options. There are also 
 
 ![rainbow](assets/rainbow.png)
 
+---
 
-
+### Vault Help Button
+Remove the help button in the vault selector
 
