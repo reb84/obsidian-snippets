@@ -1,0 +1,7 @@
+/*----------------------------------------
+	HIDE HELP BUTTON IN VAULT
+----------------------------------------*/
+
+.workspace-drawer-vault-actions .clickable-icon:first-child {
+    display: none
+}

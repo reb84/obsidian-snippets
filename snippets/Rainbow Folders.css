@@ -1,0 +1,268 @@
+/*----------------------------------------
+	RAINBOW FOLDERS by Reb84
+    inspired by the rainbow folders found
+    in the Anuppuccin theme by AnubisNekhet
+----------------------------------------*/
+
+/* ------ RAINBOW FOLDERS ------ */
+
+.default-rainbow-colours {
+    --rainbow1: 199, 79, 70;
+    --rainbow2: 222, 117, 83;
+    --rainbow3: 224, 162, 84;
+    --rainbow4: 186, 168, 87;
+    --rainbow5: 140, 165, 110;
+    --rainbow6: 120, 164, 150;
+    --rainbow7: 125, 170, 180;
+    --rainbow8: 108, 145, 168;
+    --rainbow9: 132, 135, 160;
+    --rainbow10: 154, 127, 144;
+    --rainbow11: 173, 115, 125;
+}
+
+.sherbet-rainbow-colours {
+    --rainbow1: 230, 180, 175;
+    --rainbow2: 240, 195, 185;
+    --rainbow3: 240, 210, 185;
+    --rainbow4: 220, 215, 185;
+    --rainbow5: 190, 210, 180;
+    --rainbow6: 185, 210, 200;
+    --rainbow7: 185, 215, 220;
+    --rainbow8: 180, 195, 210;
+    --rainbow9: 190, 190, 210;
+    --rainbow10: 200, 185, 195;
+    --rainbow11: 215, 180, 185;
+}
+
+.muted-rainbow-colours {
+    --rainbow1: 139, 89, 83;
+    --rainbow2: 156, 107, 93;
+    --rainbow3: 158, 132, 94;
+    --rainbow4: 136, 138, 97;
+    --rainbow5: 110, 135, 120;
+    --rainbow6: 100, 134, 140;
+    --rainbow7: 105, 140, 150;
+    --rainbow8: 88, 125, 138;
+    --rainbow9: 112, 115, 140;
+    --rainbow10: 134, 107, 124;
+    --rainbow11: 143, 95, 105;
+}
+
+.user-rainbow-colours {
+    --rainbow1: 0, 0, 0;
+    --rainbow2: 0, 0, 0;
+    --rainbow3: 0, 0, 0;
+    --rainbow4: 0, 0, 0;
+    --rainbow5: 0, 0, 0;
+    --rainbow6: 0, 0, 0;
+    --rainbow7: 0, 0, 0;
+    --rainbow8: 0, 0, 0;
+    --rainbow9: 0, 0, 0;
+    --rainbow10: 0, 0, 0;
+    --rainbow11: 0, 0, 0;
+}
+
+/* Rainbow colour assignments - shared by both styles */
+.nav-folder-children>.nav-folder:nth-child(11n+2),
+.nav-files-container>div>.nav-folder:nth-child(11n+2),
+[data-type=bookmarks] .tree-item:nth-child(11n+2) {
+    --rainbow-folder-color: var(--rainbow1);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+3),
+.nav-files-container>div>.nav-folder:nth-child(11n+3),
+[data-type=bookmarks] .tree-item:nth-child(11n+3) {
+    --rainbow-folder-color: var(--rainbow2);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+4),
+.nav-files-container>div>.nav-folder:nth-child(11n+4),
+[data-type=bookmarks] .tree-item:nth-child(11n+4) {
+    --rainbow-folder-color: var(--rainbow3);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+5),
+.nav-files-container>div>.nav-folder:nth-child(11n+5),
+[data-type=bookmarks] .tree-item:nth-child(11n+5) {
+    --rainbow-folder-color: var(--rainbow4);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+6),
+.nav-files-container>div>.nav-folder:nth-child(11n+6),
+[data-type=bookmarks] .tree-item:nth-child(11n+6) {
+    --rainbow-folder-color: var(--rainbow5);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+7),
+.nav-files-container>div>.nav-folder:nth-child(11n+7),
+[data-type=bookmarks] .tree-item:nth-child(11n+7) {
+    --rainbow-folder-color: var(--rainbow6);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+8),
+.nav-files-container>div>.nav-folder:nth-child(11n+8),
+[data-type=bookmarks] .tree-item:nth-child(11n+8) {
+    --rainbow-folder-color: var(--rainbow7);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+9),
+.nav-files-container>div>.nav-folder:nth-child(11n+9),
+[data-type=bookmarks] .tree-item:nth-child(11n+9) {
+    --rainbow-folder-color: var(--rainbow8);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+10),
+.nav-files-container>div>.nav-folder:nth-child(11n+10),
+[data-type=bookmarks] .tree-item:nth-child(11n+10) {
+    --rainbow-folder-color: var(--rainbow9);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+11),
+.nav-files-container>div>.nav-folder:nth-child(11n+11),
+[data-type=bookmarks] .tree-item:nth-child(11n+11) {
+    --rainbow-folder-color: var(--rainbow10);
+}
+
+.nav-folder-children>.nav-folder:nth-child(11n+12),
+.nav-files-container>div>.nav-folder:nth-child(11n+12),
+[data-type=bookmarks] .tree-item:nth-child(11n+12) {
+    --rainbow-folder-color: var(--rainbow11);
+}
+
+.nav-files-container .nav-folder.nav-folder .nav-folder,
+[data-type=bookmarks] .tree-item .tree-item {
+    --rainbow-folder-color: inherit;
+}
+
+/* ============================================ */
+/* SIMPLE RAINBOW - text-only styling */
+/* ============================================ */
+
+.simple-rainbow .nav-files-container>div>.nav-folder .nav-folder-title,
+.simple-rainbow [data-type=bookmarks] .tree-item .tree-item-inner {
+    transition: color 0.4s;
+    color: rgba(var(--rainbow-folder-color), var(--simple-rainbow-opacity, 1));
+    --nav-item-background-hover: rgba(var(--rainbow-folder-color), 0.1);
+    --nav-item-background-active: rgba(var(--rainbow-folder-color), 0.1);
+}
+
+.simple-rainbow .nav-folder.is-being-dragged-over {
+    background-color: rgba(var(--rainbow-folder-color), 0.1);
+}
+
+
+.simple-rainbow [data-type=bookmarks] .tree-item .tree-item-inner {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.simple-rainbow .nav-files-container .nav-folder>.nav-folder-children,
+.simple-rainbow [data-type=bookmarks] .tree-item .tree-item-children {
+    transition: color 0.4s;
+    border-color: rgba(var(--rainbow-folder-color), 0.5);
+}
+
+.simple-rainbow .tree-item-self .tree-item-icon {
+    --icon-color: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+    --nav-collapse-icon-color: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+    --nav-collapse-icon-color-collapsed: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+}
+
+/*==========================================*/
+/* FULL RAINBOW - background styling */
+/* ========================================== */
+
+.full-rainbow .nav-files-container>div>.nav-folder .nav-folder-title,
+.full-rainbow [data-type=bookmarks] .tree-item .tree-item-inner {
+    transition: color 0.4s, background-color 0.2s;
+    color: rgba(var(--rainbow-folder-color), var(--simple-rainbow-opacity, 1));
+    background-color: rgba(var(--rainbow-folder-color), 0.12);
+    border-radius: 3px;
+    --nav-item-background-hover: rgba(var(--rainbow-folder-color), 0.35);
+    --nav-item-background-active: rgba(var(--rainbow-folder-color), 0.45);
+}
+
+/* hover effect */
+.full-rainbow .nav-files-container>div>.nav-folder .nav-folder-title:hover,
+.full-rainbow [data-type=bookmarks] .tree-item .tree-item-inner:hover {
+    background-color: rgba(var(--rainbow-folder-color), 0.25);
+    color: rgba(var(--rainbow-folder-color), 1);
+    /* Make text fully opaque on hover */
+}
+
+.full-rainbow .nav-folder.is-being-dragged-over {
+    background-color: rgba(var(--rainbow-folder-color), 0.25);
+}
+
+.full-rainbow [data-type=bookmarks] .tree-item .tree-item-inner {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.full-rainbow .nav-files-container .nav-folder>.nav-folder-children,
+.full-rainbow [data-type=bookmarks] .tree-item .tree-item-children {
+    transition: color 0.4s;
+    border-color: rgba(var(--rainbow-folder-color), 0.5);
+}
+
+.full-rainbow .tree-item-self .tree-item-icon {
+    --icon-color: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+    --nav-collapse-icon-color: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+    --nav-collapse-icon-color-collapsed: rgba(var(--rainbow-folder-color),
+            var(--simple-rainbow-opacity, 1));
+}
+
+
+
+/* @settings
+
+name: Rainbow Folders
+id: rainbow-folders
+collapsed: false
+settings:
+    -
+    	id: rainbow-folders
+		title: Rainbow Folders
+		type: class-select
+		allowEmpty: false
+		default: default-rainbow
+		options:
+            - 
+                label: No Rainbow
+                value: default-rainbow
+			-
+				label: Simple Rainbow
+				value: simple-rainbow
+			-
+				label: Full Rainbow
+				value: full-rainbow
+
+    -
+    	id: rainbow-colours
+		title: Rainbow Colours
+		type: class-select
+		allowEmpty: false
+		default: default-rainbow-colours
+		options:
+            - 
+                label: Default Rainbow
+                value: default-rainbow-colours
+			-
+				label: Sherbet Rainbow
+				value: sherbet-rainbow-colours
+			-
+				label: Muted Rainbow
+				value: muted-rainbow-colours
+            -
+				label: User Rainbow
+				value: user-rainbow-colours
+*/

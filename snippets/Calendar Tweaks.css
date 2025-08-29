@@ -1,0 +1,22 @@
+/*----------------------------------------
+	CALENDAR TWEAKS by Reb84
+    For Calendar plugin by Liam Cain
+----------------------------------------*/
+
+/* reduces overall font size */
+#calendar-container {
+    font-size: var(--font-ui-small);
+}
+
+
+/* I think there is too much padding around the calendar
+container so this reduces that */
+.workspace-leaf-content[data-type="calendar"] .view-content {
+    padding: 6px !important;
+    overflow-y: hidden;
+}
+
+/* fixes calendar container to a maximum height */
+.workspace-tabs:has(.workspace-tab-header[data-type="calendar"]) {
+    max-height: 310px;
+}

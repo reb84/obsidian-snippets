@@ -1,0 +1,9 @@
+/*----------------------------------------
+	HIDDEN ICON
+----------------------------------------*/
+
+/* use [!|noicon] */
+
+.callout:is([data-callout-metadata="noicon"]) .callout-icon {
+    display: none;
+}

@@ -1,0 +1,23 @@
+/*----------------------------------------
+	IMPROVED QUOTE
+----------------------------------------*/
+.callout[data-callout="quote"] {
+    display: flex;
+    background-color: var(--background-secondary);
+    --callout-padding: 0px;
+    --callout-title-padding: 7px 15px;
+}
+
+.callout[data-callout="quote"] .callout-title-inner {
+    display: none;
+}
+
+.callout[data-callout="quote"] .callout-title {
+    min-height: 3em;
+    background-color: rgba(var(--callout-color), 0.1);
+}
+
+.callout[data-callout="quote"] .callout-content {
+    padding: 8px 20px;
+    width: 100%;
+}

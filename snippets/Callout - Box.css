@@ -1,0 +1,15 @@
+/*----------------------------------------
+	BOX
+A simple box callout. I like to use it for quotes across
+my more aesthetically decorated pages
+----------------------------------------*/
+
+.callout[data-callout="box"] {
+    border: 1px solid var(--background-modifier-border);
+    background-color: transparent;
+    text-align: center;
+
+    &>.callout-title {
+        display: none;
+    }
+}
